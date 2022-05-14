@@ -1,3 +1,5 @@
+/** @format */
+
 'use strict';
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -12,7 +14,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       waktu_login: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
       },
       id_user: {
         type: Sequelize.BIGINT,

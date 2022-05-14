@@ -1,3 +1,5 @@
+/** @format */
+
 'use strict';
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -18,7 +20,7 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       ttl: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
       },
       jenis_kelamin: {
         type: Sequelize.TEXT,

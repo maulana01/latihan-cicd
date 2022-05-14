@@ -1,23 +1,31 @@
 {
   "development": {
     "username": "postgres",
-    "password": "okto123",
+    "password": "admin",
     "database": "game_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
+    "username": "postgres",
+    "password": "admin",
+    "database": "game_development",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "url": "postgres://osvzljswvogvqj:332e67c99ac10e9aec230118719ac4ccc996830f604d4a0d6c3c33de1d4687f5@ec2-52-4-104-184.compute-1.amazonaws.com:5432/d9ghpih0sb9fak",
+    "username": "osvzljswvogvqj",
+    "password": "332e67c99ac10e9aec230118719ac4ccc996830f604d4a0d6c3c33de1d4687f5",
+    "database": "d9ghpih0sb9fak",
+    "host": "ec2-52-4-104-184.compute-1.amazonaws.com",
+    "port": 5432,
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }

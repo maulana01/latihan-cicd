@@ -1,3 +1,5 @@
+/** @format */
+
 'use strict';
 const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
@@ -9,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      this.belongsTo(models.UserGame, {
+      this.belongsTo(models.user_game, {
         as: 'user_game_biodata',
         foreignKey: 'id_user',
       });
@@ -20,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
       nama: DataTypes.TEXT,
       alamat: DataTypes.TEXT,
       email: DataTypes.TEXT,
-      ttl: DataTypes.DATE,
+      ttl: DataTypes.DATEONLY,
       jenis_kelamin: DataTypes.TEXT,
     },
     {

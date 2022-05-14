@@ -1,13 +1,6 @@
-const express = require('express');
-const app = express();
-// const swaggerJSON = require('./swagger.json');
-// const swaggerUI = require('swagger-ui-express');
-app.use(express.json());
+/** @format */
 
-// app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerJSON));
-
-// const router = require('./router');
-// app.use(router);
+const app = require('./app');
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
